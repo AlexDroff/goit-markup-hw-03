@@ -50,27 +50,30 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
-.header-nav {
+.nav {
   display: flex;
   align-items: center;
+  padding: 0 15px;
 }
 
-.header-menu {
+.menu {
   display: flex;
   gap: 40px;
+  padding: 0 15px;
 }
 
-.header-link {
+.menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
 }
 
-.header-link:hover,
-.header-link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #404bbf;
 }
 
@@ -90,29 +93,24 @@ img {
   color: #2e2f42;
 }
 
-.header-list-link {
+.list-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   font-style: normal;
-  padding: 24px 0;
 }
 
-.header-list-link:hover,
-.header-list-link:focus {
+.list-link:hover,
+.list-link:focus {
   color: #404bbf;
 }
 
-.header-list {
+.list {
   display: flex;
   gap: 40px;
 }
-/* .header-address {
-  margin-left: 332px;
-} */
-
 /* #endregion main */
 
 /* #region hero */
@@ -172,6 +170,7 @@ img {
   margin: -1px;
   padding: 0;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
@@ -235,6 +234,10 @@ img {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
+  width: calc((100% - 72px) / 4);
+}
+.team-container {
+  padding: 32px 0;
 }
 
 .team-subtitles {
@@ -245,6 +248,7 @@ img {
   color: #2e2f42;
   margin-top: 32px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-text {
@@ -270,12 +274,12 @@ img {
 
 .portfolio-item {
   background: #fff;
+  width: calc((100% - 48px) / 3);
 }
 
-.container {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+.container-portfolio {
+  border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
 }
 
@@ -283,8 +287,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 156px;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-subtitle {
@@ -293,6 +297,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -301,7 +306,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-top: 8px;
 }
 /* #endregion portfolio */
 
@@ -339,4 +343,5 @@ img {
   color: #f4f4fd;
   max-width: 264px;
 }
+
 /* #endregion footer */
