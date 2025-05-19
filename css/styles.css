@@ -52,18 +52,17 @@ img {
 
 .header-con {
   display: flex;
+  align-items: center;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  padding: 0 15px;
 }
 
 .menu {
   display: flex;
   gap: 40px;
-  padding: 0 15px;
 }
 
 .menu-link {
@@ -74,6 +73,7 @@ img {
   color: #2e2f42;
   text-decoration: none;
   padding: 24px 0;
+  display: block;
 }
 
 .menu-link:hover,
@@ -104,6 +104,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   font-style: normal;
+  padding: 24px 0;
+  display: block;
 }
 
 .list-link:hover,
@@ -115,18 +117,16 @@ img {
   display: flex;
   gap: 40px;
 }
+
+.address {
+  margin-left: auto;
+}
 /* #endregion main */
 
 /* #region hero */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
 .hero-title {
@@ -137,6 +137,8 @@ img {
   text-align: center;
   color: #fff;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -155,6 +157,8 @@ img {
   min-width: 169px;
   border: none;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -182,7 +186,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  margin: auto 156px;
 }
 
 .skill-item {
@@ -238,8 +241,6 @@ img {
   text-align: center;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  gap: 24px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -249,7 +250,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -283,7 +283,6 @@ img {
 }
 
 .portfolio-item {
-  background: #fff;
   width: calc((100% - 48px) / 3);
 }
 
